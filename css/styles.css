@@ -1,0 +1,160 @@
+:root {
+  --main-bg: hsl(233, 47%, 7%);
+  --card-bg: hsl(244, 38%, 16%);
+  --accent: hsl(277, 64%, 61%);
+  --w-100: hsl(0, 0%, 100%);
+  --w-75: hsla(0, 0%, 100%, 0.75);
+  --w-60: hsla(0, 0%, 100%, 0.6);
+  --ff-1: "Inter", sans-serif;
+  --ff-2: "Lexend Deca", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  font-family: var(--ff-1);
+  font-weight: 700;
+  font-size: 0.9375rem;
+  display: grid;
+  place-content: center;
+  margin: 1.5rem;
+  background-color: var(--main-bg);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card-bg);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  max-width: 1110px;
+  text-align: center;
+  flex: 1;
+}
+@media (min-width: 600px) {
+  .card {
+    flex-direction: row-reverse;
+    text-align: start;
+  }
+}
+.card__img {
+  position: relative;
+  max-width: 555px;
+}
+.card__img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(157, 0, 255, 0.7);
+}
+.card__content {
+  display: grid;
+  gap: 1.375rem;
+  padding: 2rem;
+  max-width: 555px;
+}
+@media (min-width: 600px) {
+  .card__content {
+    padding-top: 60px;
+    padding-left: 70px;
+    padding-right: 80px;
+    padding-bottom: 55px;
+  }
+}
+.card__title {
+  font-size: 1.7rem;
+  color: var(--w-100);
+}
+@media (min-width: 600px) {
+  .card__title {
+    font-size: 2.2rem;
+    max-width: 375px;
+    line-height: 3rem;
+  }
+}
+.card__title span {
+  color: var(--accent);
+}
+.card__text {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: var(--w-60);
+  line-height: 1.7;
+  padding-bottom: 1.5rem;
+}
+@media (min-width: 600px) {
+  .card__text {
+    max-width: 357px;
+  }
+}
+
+.flex-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media (min-width: 600px) {
+  .flex-group {
+    flex-direction: row;
+    max-width: 320px;
+    justify-content: space-between;
+  }
+}
+.flex-group .stats h2 {
+  font-size: 1.7rem;
+  color: var(--w-100);
+}
+.flex-group .stats p {
+  color: var(--w-60);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  padding-top: 0.9375rem;
+}/*# sourceMappingURL=styles.css.map */
