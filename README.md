@@ -17,11 +17,11 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - SCSS
+- CSS custom properties
 - CSS Grid
-- Mobile-first workflow
 - Flex-box
+- Mobile-first workflow
 ### Useful resources
 
 - https://www.joshwcomeau.com/css/custom-css-reset/ - This helped me to reset my css. I really liked this pattern and will use it going forward.
